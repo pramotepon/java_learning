@@ -5,6 +5,11 @@ package code.zeeker.dev;
 // Import all class in helper
 import code.zeeker.dev.helpers.*;
 
+// Import Swing Gui
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -147,14 +152,44 @@ public class Main {
     /*
         Package (Call method from package)
     */
-        DistanceConverter.kmToMiles(10);
-//        Call method and return
-        double resultMiles = DistanceConverter.reKmToMiles(10);
-        System.out.println(resultMiles);
-//        Call method and return
-        double resultKm = DistanceConverter.milesToKm(resultMiles);
-        System.out.println(resultKm);
+//        DistanceConverter.kmToMiles(10);
+////        Call method and return
+//        double resultMiles = DistanceConverter.reKmToMiles(10);
+//        System.out.println(resultMiles);
+////        Call method and return
+//        double resultKm = DistanceConverter.milesToKm(resultMiles);
+//        System.out.println(resultKm);
 
+    /*
+        Swing GUI
+    */
+        JFrame frame = new JFrame("Division Project");
+        frame.setSize(640,480);
+        frame.setLayout(null);
+
+//        Code
+//          Create input
+        JTextField inputTextField = new JTextField();
+        inputTextField.setBounds(20,20,600,60);
+        frame.add(inputTextField);
+//          Create frame
+        JLabel outputLabel = new JLabel();
+        outputLabel.setBounds(20,100,600,60);
+        frame.add(outputLabel);
+//          Create Button
+        JButton button = new JButton("OK");
+        button.setBounds(20,160,250,60);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String inputText = inputTextField.getText();
+                outputLabel.setText(inputText);
+            }
+        });
+        frame.add(button);
+//        End Code
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     /*
         Method
