@@ -170,20 +170,22 @@ public class Main {
 //        Code
 //          Create input
         JTextField inputTextField = new JTextField();
-        inputTextField.setBounds(20,20,600,60);
+        inputTextField.setBounds(20,20,550,50);
         frame.add(inputTextField);
 //          Create frame
         JLabel outputLabel = new JLabel();
-        outputLabel.setBounds(20,100,600,60);
+        outputLabel.setBounds(20,160,550,60);
         frame.add(outputLabel);
 //          Create Button
-        JButton button = new JButton("OK");
-        button.setBounds(20,160,250,60);
+        JButton button = new JButton("Calculate");
+        button.setBounds(20,100,250,50);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String inputText = inputTextField.getText();
-                outputLabel.setText(inputText);
+                int inputNumber = Integer.parseInt(inputText);
+                String output = Calculator.getDivisibleOutput(inputNumber);
+                outputLabel.setText(output);
             }
         });
         frame.add(button);
