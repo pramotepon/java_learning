@@ -88,5 +88,17 @@ public class Main {
 //        System.out.println(firstNumber >= secondNumber);
 ////        Less than or equal to
 //        System.out.println(firstNumber <= secondNumber);
+    /*
+        Operators
+        Logical Operators
+    */
+        double firstNumber = 15;
+        double secondNumber = 12;
+//        And
+        System.out.println(firstNumber > secondNumber && firstNumber >= secondNumber);
+//        Or
+        System.out.println(firstNumber > secondNumber || firstNumber <= secondNumber);
+//        Not
+        System.out.println(firstNumber != secondNumber);
     }
 }
