@@ -92,13 +92,30 @@ public class Main {
         Operators
         Logical Operators
     */
-        double firstNumber = 15;
-        double secondNumber = 12;
-//        And
-        System.out.println(firstNumber > secondNumber && firstNumber >= secondNumber);
-//        Or
-        System.out.println(firstNumber > secondNumber || firstNumber <= secondNumber);
-//        Not
-        System.out.println(firstNumber != secondNumber);
+//        double firstNumber = 15;
+//        double secondNumber = 12;
+////        And
+//        System.out.println(firstNumber > secondNumber && firstNumber >= secondNumber);
+////        Or
+//        System.out.println(firstNumber > secondNumber || firstNumber <= secondNumber);
+////        Not
+//        System.out.println(firstNumber != secondNumber);
+
+    /*
+        Conditions
+     */
+        double originalPrice = 2000;
+        double finalPrice = originalPrice;
+//        If else
+        if(originalPrice >= 10000){
+            finalPrice = originalPrice - 0.15 * originalPrice;
+        } else if (originalPrice >= 6000) {
+            finalPrice = originalPrice - 0.1 * originalPrice;
+        } else if (originalPrice >= 3000) {
+            finalPrice = originalPrice - 0.08 * originalPrice;
+        }else {
+            finalPrice = originalPrice - 0.05 * originalPrice;
+        }
+        System.out.println(finalPrice);
     }
 }
