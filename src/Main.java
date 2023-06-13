@@ -104,18 +104,28 @@ public class Main {
     /*
         Conditions
      */
-        double originalPrice = 2000;
-        double finalPrice = originalPrice;
-//        If else
-        if(originalPrice >= 10000){
-            finalPrice = originalPrice - 0.15 * originalPrice;
-        } else if (originalPrice >= 6000) {
-            finalPrice = originalPrice - 0.1 * originalPrice;
-        } else if (originalPrice >= 3000) {
-            finalPrice = originalPrice - 0.08 * originalPrice;
-        }else {
-            finalPrice = originalPrice - 0.05 * originalPrice;
-        }
-        System.out.println(finalPrice);
+//        double originalPrice = 2000;
+//        double finalPrice = originalPrice;
+////        If else
+//        if(originalPrice >= 10000){
+//            finalPrice = originalPrice - 0.15 * originalPrice;
+//        } else if (originalPrice >= 6000) {
+//            finalPrice = originalPrice - 0.1 * originalPrice;
+//        } else if (originalPrice >= 3000) {
+//            finalPrice = originalPrice - 0.08 * originalPrice;
+//        }else {
+//            finalPrice = originalPrice - 0.05 * originalPrice;
+//        }
+//        System.out.println(finalPrice);
+
+    /*
+        Loop
+     */
+////    For
+//        int sumNumber = 0;
+//        for (int i = 2; i <= 4; i++){
+//            sumNumber += i;
+//        }
+//        System.out.println(sumNumber);
     }
 }
