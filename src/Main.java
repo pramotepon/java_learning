@@ -40,18 +40,38 @@ public class Main {
 
     /*
             Operators
+            Arithmetic Operators
     */
         double firstNumber = 15;
         double secondNumber = 4;
-//        Addition
-        System.out.println(firstNumber + secondNumber);
-//        Subtraction
-        System.out.println(firstNumber - secondNumber);
-//        Multiplication
-        System.out.println(firstNumber * secondNumber);
-//        Division
-        System.out.println(firstNumber / secondNumber);
-//        Modulus
-        System.out.println(firstNumber % secondNumber);
+////        Addition
+//        System.out.println(firstNumber + secondNumber);
+////        Subtraction
+//        System.out.println(firstNumber - secondNumber);
+////        Multiplication
+//        System.out.println(firstNumber * secondNumber);
+////        Division
+//        System.out.println(firstNumber / secondNumber);
+////        Modulus
+//        System.out.println(firstNumber % secondNumber);
+////        Increment
+//        firstNumber++;
+//        System.out.println(firstNumber);
+////        Decrement
+//        secondNumber--;
+//        System.out.println(secondNumber);
+    /*
+        Operators
+        Assignment Operators
+    */
+////        addition assignment
+//        firstNumber += 5;
+//        System.out.println(firstNumber);
+////        Subtraction assignment
+//        secondNumber -= 2;
+//        System.out.println(secondNumber);
+
+
+
     }
 }
