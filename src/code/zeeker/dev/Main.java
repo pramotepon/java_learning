@@ -1,3 +1,10 @@
+package code.zeeker.dev;
+
+//import code.zeeker.dev.helpers.DistanceConverter;
+
+// Import all class in helper
+import code.zeeker.dev.helpers.*;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -128,30 +135,42 @@ public class Main {
 //        }
 //        System.out.println(sumNumber);
 
-//        Call method
-        kmToMiles(10);
+////        Call method
+//        kmToMiles(10);
+////        Call method and return
+//        double resultMiles = reKmToMiles(10);
+//        System.out.println(resultMiles);
+////        Call method and return
+//        double resultKm = milesToKm(resultMiles);
+//        System.out.println(resultKm);
+
+    /*
+        Package (Call method from package)
+    */
+        DistanceConverter.kmToMiles(10);
 //        Call method and return
-        double resultMiles = reKmToMiles(10);
+        double resultMiles = DistanceConverter.reKmToMiles(10);
         System.out.println(resultMiles);
 //        Call method and return
-        double resultKm = milesToKm(resultMiles);
+        double resultKm = DistanceConverter.milesToKm(resultMiles);
         System.out.println(resultKm);
+
     }
     /*
         Method
         void : Method is not return
      */
-    static void kmToMiles(double km){
-        double miles = km / 1.6;
-        System.out.println(miles);
-    }
-
-    static double reKmToMiles(double km){
-        double miles = km / 1.6;
-        return miles;
-    }
-
-    static double milesToKm(double miles){
-        return miles * 1.6;
-    }
+//    static void kmToMiles(double km){
+//        double miles = km / 1.6;
+//        System.out.println(miles);
+//    }
+//
+//    static double reKmToMiles(double km){
+//        double miles = km / 1.6;
+//        return miles;
+//    }
+//
+//    static double milesToKm(double miles){
+//        return miles * 1.6;
+//    }
 }
