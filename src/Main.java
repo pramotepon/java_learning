@@ -29,13 +29,29 @@ public class Main {
     /*
             Convert String
     */
-//        To integer
-        String numberText = "23";
-        int number = Integer.parseInt(numberText);
-        System.out.println(number + 5);
-//        To double
-        String textDouble = "23.77";
-        double numberDouble = Double.parseDouble(textDouble);
-        System.out.println(numberDouble + 0.2);
+////        To integer
+//        String numberText = "23";
+//        int number = Integer.parseInt(numberText);
+//        System.out.println(number + 5);
+////        To double
+//        String textDouble = "23.77";
+//        double numberDouble = Double.parseDouble(textDouble);
+//        System.out.println(numberDouble + 0.2);
+
+    /*
+            Operators
+    */
+        double firstNumber = 15;
+        double secondNumber = 4;
+//        Addition
+        System.out.println(firstNumber + secondNumber);
+//        Subtraction
+        System.out.println(firstNumber - secondNumber);
+//        Multiplication
+        System.out.println(firstNumber * secondNumber);
+//        Division
+        System.out.println(firstNumber / secondNumber);
+//        Modulus
+        System.out.println(firstNumber % secondNumber);
     }
 }
