@@ -42,8 +42,8 @@ public class Main {
             Operators
             Arithmetic Operators
     */
-        double firstNumber = 15;
-        double secondNumber = 4;
+//        double firstNumber = 15;
+//        double secondNumber = 4;
 ////        Addition
 //        System.out.println(firstNumber + secondNumber);
 ////        Subtraction
@@ -70,8 +70,23 @@ public class Main {
 ////        Subtraction assignment
 //        secondNumber -= 2;
 //        System.out.println(secondNumber);
-
-
-
+    /*
+        Operators
+        Comparison Operators
+    */
+//        double firstNumber = 15;
+//        double secondNumber = 12;
+////        Equal to
+//        System.out.println(firstNumber == secondNumber);
+////        Not equal
+//        System.out.println(firstNumber != secondNumber);
+////        Greater than
+//        System.out.println(firstNumber > secondNumber);
+////        Less than
+//        System.out.println(firstNumber < secondNumber);
+////        Greater than or equal to
+//        System.out.println(firstNumber >= secondNumber);
+////        Less than or equal to
+//        System.out.println(firstNumber <= secondNumber);
     }
 }
